@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meals by Ameya </title>
+    <style>
+        /* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+#nav{
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+ 
+    margin: 20px;
+
+}
+
+#logo img{
+        height: 40px;
+         margin:  10 20px;
+}
+
+#nav ul{
+
+    display: flex;
+}
+
+#nav::before{
+
+    content: "";
+    background-color:brown;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4    ;
+}
+
+#nav ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#nav ul li a{
+
+    text-align: center;
+    justify-content: center;
+    display:block;
+    color: white;
+    padding:  50px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    
+}
+
+#home{
+
+
+    display: flex;
+    flex-direction: column;
+    padding: 3px 22px;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89    ; 
+}
+
+#home h1{
+
+color:white ;
+text-align: center;
+}
+
+.h1{
+
+   font-size: 2.8rem;
+   padding: 12px;
+}
+
+
+.btn{
+
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.center{
+
+    text-align: center;
+}
+
+.serh1 {
+    margin: 50px auto 30px;
+    border: 2px solid brown;
+    width: 700px;
+    text-align: center;
+    background-color: burlywood;
+    font-weight: bold;
+
+
+
+}
+
+
+.box-1{
+
+
+    border: 2px solid brown;
+    /* margin: 3 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* width: 400px; */
+    border-radius: 30px ;
+
+
+}
+
+
+.box-1 img{
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    background-color: burlywood;
+    margin-top: 20px;
+    border: 3px solid black ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.box-2{
+
+
+    border: 2px solid brown;
+    /* margin: 3 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* width: 400px; */
+    border-radius: 30px ;
+
+
+}
+
+
+.box-2 img{
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    background-color: burlywood;
+    margin-top: 20px;
+    border: 3px solid black ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.box-3{
+
+
+    border: 2px solid brown;
+    /* margin: 3 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* width: 400px; */
+    border-radius: 30px ;
+
+
+}
+
+
+.box-3 img{
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    background-color: burlywood;
+    margin-top: 20px;
+    border: 3px solid black ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/* nav home  */
+#homehome{
+
+
+    display: flex;
+    flex-direction: column;
+    padding: 3px 22px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89    ; 
+}
+
+#homehome h1{
+
+color:white ;
+text-align: center;
+}
+
+.h1{
+
+   font-size: 2.8rem;
+   padding: 12px;
+}
+
+
+.btn{
+
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+#contact{
+
+ 
+    height: 90vh;   
+    width: 98vw;
+    background: url(contact.png) no-repeat center center/cover ;
+    border: 5px solid rgb(218, 84, 84);
+    border-radius: 40px;
+    
+    
+    
+   
+
+}
+
+
+
+
+
+.contactbox{
+
+    
+
+    display: flex;
+
+    padding-bottom: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
+}
+
+
+
+
+
+
+.contactbox input{
+
+
+    width: 30%;
+    padding: 0.5rem ;
+    margin: 20px;
+
+    border-radius: 20px;
+    font-size: 1.3rem;
+
+
+}
+
+
+.contactbox form{
+
+
+    width: 40%;
+  
+
+
+}
+
+
+
+ 
+.contactbox label{
+
+
+   font-size: 1.5rem;
+   
+
+}
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="logo">
+            <img src="logo.PNG" alt=" sorry">
+        </div>
+
+        <ul>
+
+            <li class="item"><a href="#home">Home </a></li>
+            <li class="item"><a href="#services">Services</a> </li>
+
+            <li class="item"><a href="#contact">Contact</a> </li>
+
+
+
+        </ul>
+
+        <!-- <section id="home">
+
+    <h1 class="h1">
+        Weclome to Meals By Ameya . Ameya Foods 
+    </h1>
+
+    <button class="btn"> Order Now  </button>
+   </section> -->
+    </div>
+
+
+    <section id="home">
+
+        <h1 class="h1">
+            Weclome to MealsByAmeya <br>Ameya Foods
+        </h1>
+        <!-- <hr> -->
+
+        <button class="btn"> Order Now </button>
+    </section>
+
+
+    <section id="services">
+        <h1 class="serh1 center"> Our Services </h1>
+        <br>
+        <br>
+
+
+        <div class="box-1 center">
+            <img src="k.png" alt="sorry">
+            <h2 class="h2 center">Fresh Food Is Our First Priority </h2><br>
+            <hr><br>
+            <p class="center">We Delivery all Food Very Fresh And Take You Care. </p>
+        </div>
+        <div class="box-2">
+
+            <img src="delivery2.jpg" alt="sorry ">
+            <h2 class="h2 center">Coffe Is Our Speciality </h2><br>
+            <hr><br>
+            <p class="center">We Deliver Black,Green and Cappuccino Coffe</p>
+        </div>
+        <div class="box-3">
+            <img src="chai.jpg" alt="chai">
+
+            <h2 class="h2 center">Try Our TanDoori Chai </h2><br>
+            <hr><br>
+
+            <p class="center">We Mix all the spices with chai which Gives The <br> Felling Of Heaven and The beautiful
+                Taste <br>Goddness of Ayurveda.<br>
+                <strong>TanDoori Chai </strong>
+            </p>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="delivery">
+
+
+        <h1 class="serh1 center">Delivery</h1>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="box-1 center">
+            <img src="12.jpg" alt="sorry">
+            <h2 class="h2 center">Free Of Cost Delivery On All Items From MealsByAmeya
+
+            </h2><br>
+            <hr><br>
+            <p class="center"> Our Delivery Is Free Of Cost + <br>If By Chance Food Is Deliverd After 1 hour of booking
+                <br>Food Will Be Free Of Cost .If Payement is online It will be Refunded </p>
+
+        </div>
+        <div class="box-1 center">
+            <img src="delivery.jpg" alt="sorry">
+            <h2 class="h2 center"> Door Step Delivery From MealsByAmeya
+
+            </h2><br>
+            <hr><br>
+            <p class="center"> We Take You Care <br> We Want You To Be Safe So <br>Food From Us Is Allways At Doorstep
+                With No Contact Delivery </p>
+        </div>
+
+
+
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+
+    <h1 class="serh1 center"> contact </h1>
+
+
+    <section id="contact">
+
+
+        <br>
+        <br>
+
+        <form action="">
+
+            <div class="contactbox">
+
+                <label for="Name ">Name : </label>
+                <input type="text" name="name " class="name" placeholder="Enter Your Name ">
+            </div>
+            <div class="contactbox">
+
+                <label for="Name ">Email : </label>
+                <input type="Email" name="Email" name="name" placeholder="Enter Your email">
+            </div>
+            <div class="contactbox">
+
+                <label for="Name "> phone Number : </label>
+                <input type="number" name="phone " name="name" placeholder="Enter Your phone number ">
+            </div>
+           
+
+        </form>
+    </section>
+
+
+
+    
+
+</body>
+
+</html>
